@@ -1,0 +1,69 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: cursive;
+	overflow-x: hidden;
+}
+
+.para{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	background-image: linear-gradient(-50deg,skyblue,#FFF,#fff,skyblue);
+}
+
+.input{
+	width: 350px;
+	padding: 20px;
+	margin: 20px;
+	border-radius: 20px;
+	border: 1px solid #ebf1f67a;
+	box-shadow: 10px 10px 15px #e5e5e596;
+}
+
+::placeholder{
+	font-size: 16px;
+}
+
+.btn{
+	height: 60px;
+	width: 90px;
+	border: 1px solid #ebf1f67a;
+	border-radius: 20px;
+	font-size: 16px;
+	background-color: #bae7f9;
+	box-shadow: 10px 10px 15px #e5e5e596;
+	cursor: pointer;
+}
+
+.leap{
+	font-size: 20px;
+	position: absolute;
+	top: 430px;
+	color: #0096d3;
+}
+
+@media(max-width:2580px){.leap{position: absolute;top: 950px}}
+@media(max-width:2000px){.leap{position: absolute;top: 450px}}
+@media(max-width:1450px){.leap{position: absolute;top: 550px}}
+@media(max-width:1030px){.leap{position: absolute;top: 490px}}
+@media(max-width:770px){.leap{position: absolute;top: 380px}}
+@media(max-width:480px){
+	.input{width: 250px;height: 40px;border-radius: 15px;}
+	::placeholder{font-size: 14px}
+	.btn{height: 40px;width: 70px;border-radius: 15px;font-size: 14px;padding: 8px 10px 10px 8px}
+	.leap{font-size: 18px;position: absolute;top: 360px}
+}
+@media(max-width:380px){
+	.input{width: 230px;height: 35px;margin: 15px}::placeholder{font-size: 12px}
+	.btn{width: 60px;font-size: 12px;padding: 5px 8px 8px 6px}
+	.leap{font-size: 16px;position: absolute;top: 350px}
+}
+@media(max-width:330px){
+	.input{width: 200px;height: 30px;margin: 10px}::placeholder{font-size: 12px}
+	.btn{font-size: 12px;padding: 3px 4px 6px 4px}
+	.leap{font-size: 14px;}
+}
